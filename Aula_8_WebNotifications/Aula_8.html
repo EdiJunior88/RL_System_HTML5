@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebNotifications</title>
+</head>
+<body>
+    <script type="text/javascript">
+        function getNotification(){
+            if(window.webkitNotifications.checkPermission() == 0){
+                showNotification();
+            }
+            else {
+                window.Notifications.requestPermission();
+            }
+        }
+        
+        function showNotification(){
+            var n = window.webkitNotifications.createNotification("../imagens/RL-System-logo.jpg", "Novo E-mail", "Olá, tudo bem...");
+            n.show();
+        }
+        
+        setInterval("getNotification()", 6000);
+    </script>
+    
+    <input type="button" onclick="getNotification()" value="Exibir">
+</body>
+</html>
