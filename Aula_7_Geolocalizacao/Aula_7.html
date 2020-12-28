@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Title</title>
+</head>
+<body>
+    <script type="text/javascript">
+        function getLocation(){
+            if(navigator.geolocation){
+                navigator.geolocation.getCurrentPosition(getPosition);
+            }
+            else {
+                alert("Geolocalização não suportada!");
+            }
+        }
+        
+        function getPosition(posicao){
+            document.getElementById("la").value = posicao.coords.latitude;
+            document.getElementById("lo").value = posicao.coords.longitude;
+        }
+    </script>
+    
+    <form>
+        Latitude: <input type="text" id="la">
+        <br>
+        Longitude: <input type="text" id="lo">
+        <br>
+        <input type="button" value="Exibir" onlclick="getLocation()">
+    </form>
+</body>
+</html>
