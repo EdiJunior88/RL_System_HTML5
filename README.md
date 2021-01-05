@@ -22,4 +22,4 @@ Programador, certamente seus trabalhos se tornarão mais fáceis e melhor acessa
 <hr/>
 
 <h4><b>Aulas:</b> :vhs: 9 Módulos + Vídeo-Aulas</h4>
-<h4><b>Status do Curso:</b> :speech_balloon: Estudando</h4>
+<h4><b>Status do Curso:</b> :white_check_mark: Concluído
