@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canvas</title>
+    <script type="text/javascript">
+        var x_obj1 = 0;
+        var y_obj2 = 100;
+        
+        function load(){
+            var cenario = document.getElementById("cenario")
+            var ctx = cenario.getContext("2d");
+            
+            //Fundo
+            ctx.fillStyle = "#FFFFFF";
+            ctx.fillRect(0, 0, 800, 600);
+
+            ctx.fillStyle = "#c0c0c0";
+            ctx.fillRect(x_obj1, 0, 100, 50);
+
+            ctx.fillStyle = "yellow";
+            ctx.fillRect(100, y_obj2, 100, 50);
+            
+            x_obj1 = x_obj1 + 5;
+            y_obj2 = y_obj2 + 5;
+            
+            if (x_obj1 > 300){
+                x_obj1 = 0;
+            }
+        }
+        
+        setInterval("load()", 10);
+    </script>
+</head>
+<body onload="load()">
+    <canvas id="cenario" width="800" height="600">
+    
+    </canvas>
+</body>
+</html>
