@@ -23,7 +23,13 @@ Programador, certamente seus trabalhos se tornarão mais fáceis e melhor acessa
 
 <strong>Página do Projeto: </strong> <a href="https://edijunior88.github.io/RL_System_HTML5/">https://edijunior88.github.io/RL_System_HTML5/</a>
 
-<hr/>
+<hr>
+
+<h3>Tecnologias Utilizadas</h3>
+
+Para ver todas as tecnologias [clique aqui](/techstack.md)
+
+<hr>
 
 <h4><b>Aulas:</b> :vhs: 9 Módulos + Vídeo-Aulas</h4>
 <h4><b>Status do Curso:</b> :white_check_mark: Concluído
